@@ -1,16 +1,21 @@
 h1 {
     background-color:yellowgreen;
     text-align:center;
+    font-style: italic;
 }
 
 h2 {
     background-color: greenyellow;
+    text-align: center;
+    font-style: italic;
 }
 h3{
     background-color: pink;
+    font-style: italic;
 }
 p {
     text-align: center;
+    font-style: italic;
 }
 
 strong {
@@ -21,16 +26,27 @@ body{
     background-color: bisque;
 }
 .brilho {
+    font-style: italic;
     background-color: lightblue
 }
 
 strong {
+    font-style: italic;
     font-size: larger;
+    font-size: medium;
 }
 
 body {
+    font-style: italic;
     background-color:lightgreen;
 }
 .unicornio {
+    font-style: italic;
     background-color:burlywood
+}
+
+.lista {
+    display: inline-block;
+    padding: 5%;
+    margin: right 10%;
 }
