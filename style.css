@@ -44,6 +44,9 @@ body {
     font-style: italic;
     background-color:burlywood
 }
+.imagemcentralizada{
+    text-align:center
+}
 
 .lista {
     display: inline-block;
