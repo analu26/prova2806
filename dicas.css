@@ -1,1 +1,32 @@
-
+body{
+    background-color: bisque;
+}
+strong {
+    font-style: italic;
+    font-size: larger;
+    font-size: medium;
+}
+strong {
+    font-size: 30px
+}
+nav a{
+    text-transform: uppercase;
+    color: blanchedalmond;
+    font-weight: 300;
+    font-size: 70;
+    text-decoration: overline;
+}
+.imagem3{
+    width: 35%;
+}
+.imagem4{
+    width: 35%;
+}
+.imagem5{
+    width: 35%;
+}
+h1 {
+    background-color: plum;
+    text-align:center;
+    font-style: italic;
+}
