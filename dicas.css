@@ -25,6 +25,10 @@ nav a{
 .imagem5{
     width: 35%;
 }
+.imagemcentralizada{
+    text-align:center
+}
+
 h1 {
     background-color: plum;
     text-align:center;
