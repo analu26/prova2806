@@ -23,6 +23,7 @@ strong {
 }
 
 body{
+    text-align: center;
     background-color: bisque;
 }
 .brilho {
@@ -51,7 +52,8 @@ body {
 .lista {
     display: inline-block;
     padding: 5%;
-    margin: right 10%;
+    margin-right: 10%;
+    color: mediumturquoise;
 }
 nav a{
     text-transform: uppercase;
