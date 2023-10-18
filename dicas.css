@@ -34,3 +34,13 @@ h1 {
     text-align:center;
     font-style: italic;
 }
+.centralizada{
+    text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  border-color: pink;
+  border-width: 30px;
+  border-style: double;
+}
