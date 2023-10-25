@@ -1,5 +1,6 @@
 body{
     background-color: bisque;
+    text-align: center;
 }
 strong {
     font-style: italic;
@@ -11,7 +12,7 @@ strong {
 }
 nav a{
     text-transform: uppercase;
-    color: blanchedalmond;
+    color: violet;
     font-weight: 300;
     font-size: 70;
     text-decoration: overline;
@@ -35,7 +36,7 @@ h1 {
     font-style: italic;
 }
 .centralizada{
-    text-align: center;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   margin: 0 1.5%;
@@ -43,4 +44,5 @@ h1 {
   border-color: pink;
   border-width: 30px;
   border-style: double;
+}
 }
