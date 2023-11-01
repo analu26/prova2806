@@ -71,3 +71,7 @@ nav a{
 .imagem2 {
     width: 35%;
 }
+nav a:hover {
+    color:greenyellow;
+    text-decoration: underline;
+}
