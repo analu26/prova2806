@@ -1,1 +1,21 @@
-
+nav a{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 70;
+    color: violet;
+    text-decoration: overline;
+}
+nav a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+main{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 70;
+    color: orangered;
+}
+body{
+    background-color: bisque;
+}
