@@ -75,3 +75,7 @@ nav a:hover {
     color:greenyellow;
     text-decoration: underline;
 }
+footer{
+    background-color:brown;
+    text-decoration: double;
+}
