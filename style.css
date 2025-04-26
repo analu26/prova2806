@@ -1,110 +1,113 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+/* Variáveis */
+:root {
+    --laranja-claro: #FF862A;
+}
+
+/* Estilos gerais */
+body {
+    text-align: center;
+    background-color: rgb(248, 223, 177);
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
 h1 {
     background-color: coral;
-    text-align:center;
+    text-align: center;
     font-style: italic;
 }
 
 h2 {
     background-color: rgb(209, 77, 132);
     text-align: center;
-    font-style: italic;
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--laranja-claro);
 }
-h3{
+
+h3 {
     background-color: rgb(119, 241, 38);
     font-style: italic;
 }
+
 p {
     text-align: center;
     font-style: italic;
 }
 
 strong {
-    font-size: 30px
+    font-size: larger;
+    font-style: italic;
 }
 
-body{
-    text-align: center;
-    background-color: bisque;
-}
 .brilho {
     font-style: italic;
-    background-color: rgb(135, 236, 41)
+    background-color: rgb(135, 236, 41);
 }
 
-strong {
-    font-style: italic;
-    font-size: larger;
-    font-size: medium;
-}
-
-body {
-    font-style: italic;
-    background-color:rgb(248, 223, 177);
-}
 .unicornio {
     font-style: italic;
-    color:burlywood
+    color: burlywood;
 }
-.imagemcentralizada{
-    text-align:center
+
+.imagemcentralizada {
+    text-align: center;
 }
 
 .lista {
     text-align: left;
     display: inline-block;
     color: orangered;
-    border-color: pink;
-    border-width: 20px;
-    border-style: solid;
+    border: 2px solid pink;
     border-radius: 12px 50px 2px 120px;
+    padding: 1rem;
 }
-nav a{
+
+/* Navegação */
+nav a {
     text-transform: uppercase;
     color: orangered;
     font-weight: 300;
     font-size: 100%;
     text-decoration: overline;
 }
-.imagem1 {
-    width: 35%;
-}
-.imagem2 {
-    width: 35%;
-}
+
 nav a:hover {
-    color:greenyellow;
+    color: greenyellow;
     text-decoration: underline;
 }
-footer{
-    background-color:brown;
+
+/* Imagens */
+.imagem1, .imagem2 {
+    width: 35%;
+}
+
+/* Footer */
+footer {
+    background-color: brown;
     text-decoration: double;
+    color: white;
+    padding: 1rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-:root {
-    --laranja-claro: #FF862A;
+/* Botões */
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
 }
 
-body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
-}
-
-header {
-    background-color: #ffffff;
-}
-
-
+/* Seções */
 section {
     padding-bottom: 5rem;
-}
-
-
-.nav-link {
-    color: #CB6D43;
-    font-weight: 600;
 }
 
 .inicio-fundo {
@@ -118,15 +121,6 @@ section {
     margin: 0 auto;
 }
 
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
-}
-
-
 .esquerda-conteudo {
     display: flex;
     flex-direction: column;
@@ -134,64 +128,13 @@ section {
     gap: 1rem;
 }
 
-
-.botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
-}
-
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
-}
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-}
-    
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
-}
-
-#galeria {
-    background-color: #FAF4F4;
-
-}
-
+/* Galeria */
 .fundo-galeria {
     background: url('img/flor-bottom-direita.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
-#contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-}
-
+/* Formulário */
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
