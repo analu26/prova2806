@@ -1,17 +1,17 @@
-/* Importação de fontes */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-/* Variáveis */
+
 :root {
     --laranja-claro: #FF862A;
 }
 
-/* Estilos gerais */
+
 body {
     text-align: center;
     background-color: rgb(248, 223, 177);
-    font-size: 1rem;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -59,6 +59,14 @@ strong {
     text-align: center;
 }
 
+.imagemcentralizada img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .lista {
     text-align: left;
     display: inline-block;
@@ -68,7 +76,28 @@ strong {
     padding: 1rem;
 }
 
-/* Navegação */
+.lista li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #CB6D43;
+}
+.lista li:hover {
+    color: #FF862A;
+    text-decoration: underline;
+}
+.lista a {
+    text-decoration: none;
+    color: #CB6D43;
+}
+.lista a:hover {
+    color: #FF862A;
+    text-decoration: underline;
+}
+.lista a:active {
+    color: #FF862A;
+    text-decoration: underline;
+}   
 nav a {
     text-transform: uppercase;
     color: orangered;
@@ -82,12 +111,130 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Imagens */
+nav a:active {
+    color: #FF862A;
+    text-decoration: underline;
+}
+nav a:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FF862A, 0 0 10px #FF862A, 0 0 15px #FF862A;
+}
+nav a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 5px #FF862A, 0 0 10px #FF862A, 0 0 15px #FF862A;
+}
+nav a:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+    cursor: not-allowed;
+}
+nav a:focus-visible:disabled:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+nav a:focus-visible:disabled:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+nav a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+nav a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}   
 .imagem1, .imagem2 {
     width: 35%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;}
+.imagem1:hover, .imagem2:hover {
+    transform: scale(1.05);
+}
+.imagem1 {
+    margin: 0 auto;
+    display: block;
+}
+.imagem2 {
+    margin: 0 auto;
+    display: block;
 }
 
-/* Footer */
+
 footer {
     background-color: brown;
     text-decoration: double;
@@ -95,7 +242,23 @@ footer {
     padding: 1rem;
 }
 
-/* Botões */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--laranja-claro);
+    text-decoration: underline;
+}
+footer p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+footer .redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 .botao-inicio {
     background-color: var(--laranja-claro);
     border-radius: 30px;
@@ -105,7 +268,7 @@ footer {
     align-content: center;
 }
 
-/* Seções */
+
 section {
     padding-bottom: 5rem;
 }
@@ -128,13 +291,180 @@ section {
     gap: 1rem;
 }
 
-/* Galeria */
+.direita-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.conteudo img {
+    width: 50%;
+    height: auto;
+} 
+.conteudo h2 {
+    font-size: 2.5rem;
+    color: #CB6D43;
+    text-align: center;
+}
+.conteudo p {
+    font-size: 1.2rem;
+    color: #CB6D43;
+    text-align: center;
+}
+.conteudo h3 {
+    font-size: 1.5rem;
+    color: #CB6D43;
+    text-align: center;
+}
+.conteudo h4 {
+    font-size: 1.2rem;
+    color: #CB6D43;
+    text-align: center;
+}
+.conteudo h5 {
+    font-size: 1rem;
+    color: #CB6D43;
+    text-align: center;
+}
+.conteudo h6 {
+    font-size: 0.8rem;
+    color: #CB6D43;
+    text-align: center;
+}
+.conteudo ul {
+    list-style-type: none;
+    padding: 0;
+}
+.conteudo li {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #CB6D43;
+}
+.conteudo li:hover {
+    color: #FF862A;
+    text-decoration: underline;
+}
+.conteudo a {
+    text-decoration: none;
+    color: #CB6D43;
+}
+.conteudo a:hover {
+    color: #FF862A;
+    text-decoration: underline;
+}
+.conteudo .botao-inicio {
+    background-color: #CB6D43;
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+.conteudo .botao-inicio:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FF862A, 0 0 10px #FF862A, 0 0 15px #FF862A;
+}
+.conteudo .botao-inicio:disabled {
+    background-color: #FF862A;
+    color: white;
+    cursor: not-allowed;
+}
+.conteudo .botao-inicio:disabled:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+.conteudo .botao-inicio:disabled:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+.conteudo .botao-inicio:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+.conteudo .botao-inicio:disabled:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}   
 .fundo-galeria {
     background: url('img/flor-bottom-direita.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
-/* Formulário */
+
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
@@ -151,4 +481,129 @@ section {
 
 .form-control {
     background-color: #F1EDEF;
+}
+
+header {
+    position: relative;
+    background-image: url('Receitas-da-Ana-logo-cabeçalho.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 200px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+header::before {
+    content: url(Receitas-da-Ana-logo-cabeçalho.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
+header nav, header img, header ul {
+    position: relative;
+    z-index: 1; 
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+header nav a:hover {
+    color: var(--laranja-claro);
+    text-decoration: underline;
+}
+header img {
+    width: 100px;
+    height: auto;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+header ul li {
+    display: inline;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+header ul li a:hover {
+    color: var(--laranja-claro);
+    text-decoration: underline;
+}
+header ul li a:active {
+    color: #FF862A;
+    text-decoration: underline;
+}
+header ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 5px #FF862A, 0 0 10px #FF862A, 0 0 15px #FF862A;
+}
+header ul li a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 5px #FF862A, 0 0 10px #FF862A, 0 0 15px #FF862A;
+}
+header ul li a:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+header ul li a:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+header ul li a:focus-visible:disabled {
+    background-color: #FF862A;
+    color: white;
+    cursor: not-allowed;
+}
+header ul li a:focus-visible:disabled:hover {
+    background-color: #FF862A;
+    color: white;
+}
+header ul li a:focus-visible:disabled:active {
+    background-color: #FF862A;
+    color: white;
+}
+header ul li a:focus-visible:disabled:focus {
+    outline: none;
+    box-shadow: none;
+}
+header ul li a:focus-visible:disabled:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+header ul li a:focus-visible:disabled:focus-visible:active {
+    background-color: #FF862A;
+    color: white;
+}
+header ul li a:focus-visible:disabled:focus-visible:hover {
+    background-color: #FF862A;
+    color: white;
+}
+.font-size-control {
+    font-size: 1rem;
+}
+
+.font-size-control.large {
+    font-size: 1.25rem;
+}
+
+.font-size-control.small {
+    font-size: 0.875rem;
 }
